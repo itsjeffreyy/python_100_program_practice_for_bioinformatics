@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+# author: Jeffreyy C.H. Yu
+# Note: Calculate the reads number of the fastq file.
+# usage: `python fastq_count_reads.py` or `python fastq_count_reads.py your_fastq.fq`.
+#        The result shows the length of your string and your real string.
 import sys
 import os
 
