@@ -16,7 +16,7 @@ else:
 # check fastq file name and whether the file isexcite
 if not fqfn.endswith('.fq') and not fqfn.endswith('.fastq'):
     print("ERR: The fastq file name is wrong!")
-    print("MSG: The file name should end with \".fq\" otr \".fastq\"")
+    print("MSG: The file name not end with \".fq\" otr \".fastq\"")
     exit()
 elif not os.path.isfile(fqfn):
     print("ERR: The fastq file " + fqfn + " does not excite!")
@@ -35,4 +35,4 @@ if fq_len % 4 != 0:
 
 # count how many reads
 reads_number = fq_len/4
-print("Fastq", fqfn ,"reads counts:", int(reads_number))
+print("Fastq", fqfn ,"reads counts:\n" + str(int(reads_number)))
